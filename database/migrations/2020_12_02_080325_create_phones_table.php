@@ -15,10 +15,10 @@ class CreatePhonesTable extends Migration
     {
         Schema::create('phones', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user_id')->unsigned();
+            $table->bigInteger('user_id');
             $table->string('phone_type');
-            $table->timestamps();
             $table->softDeletes();
+            $table->timestamps();         
         });
     }
 

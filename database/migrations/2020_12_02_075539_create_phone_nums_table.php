@@ -15,10 +15,10 @@ class CreatePhoneNumsTable extends Migration
     {
         Schema::create('phone_nums', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('phone_id')->unsigned();
+            $table->bigInteger('phone_id');
             $table->string('phone_num');
-            $table->timestamps();
             $table->softDeletes();
+            $table->timestamps();           
         });
     }
 
