@@ -21,3 +21,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('register', [UserController::class, 'register']);
 Route::post('login', [UserController::class, 'login']);
+
+
+Route::get('/unauthorized',  [UserController::class, 'unauthorized']);
+
+Route::group(['middleware' => ['CheckClientCredentials','auth:api']], function() {
+    Route::post('logout',  [UserController::class, 'logout']);
+    Route::post('details',  [UserController::class, 'details']);
+});
