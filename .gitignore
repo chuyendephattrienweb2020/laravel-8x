@@ -27,3 +27,4 @@ storage/framework/sessions/*
 bootstrap/cache/*
 vendor/
 vendor
+.env
