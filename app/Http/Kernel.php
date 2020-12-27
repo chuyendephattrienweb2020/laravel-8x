@@ -62,5 +62,14 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        
+        /**
+         * My middlewares
+         */
+        'admin_logged' => \Foostart\Acl\Http\Middleware\AdminLogged::class,
+        'logged' => \Foostart\Acl\Http\Middleware\Logged::class,
+        'can_see' => \Foostart\Acl\Http\Middleware\CanSee::class,
+        'has_perm' => \Foostart\Acl\Http\Middleware\HasPerm::class,
+        'in_context' => \Foostart\Category\Middleware\InContext::class,
     ];
 }
