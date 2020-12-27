@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3452d82e95510f96836ff4f506db2218",
+    "content-hash": "bd420f708a0c2aeff7e7183fde5aacbb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -624,6 +624,127 @@
             "time": "2020-12-23T07:38:32+00:00"
         },
         {
+            "name": "foostart/package-filemanager",
+            "version": "8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/foostart/package-filemanager.git",
+                "reference": "fe710b0d7fa072ceebb9b7784e21d3dad48cea9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/foostart/package-filemanager/zipball/fe710b0d7fa072ceebb9b7784e21d3dad48cea9a",
+                "reference": "fe710b0d7fa072ceebb9b7784e21d3dad48cea9a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-exif": "*",
+                "ext-fileinfo": "*",
+                "illuminate/support": ">=4.2.0",
+                "intervention/image": "2.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.0",
+                "phpspec/phpspec": "~2.1",
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-gd": "to use GD library based image processing.",
+                "ext-imagick": "to use Imagick based image processing."
+            },
+            "bin": [
+                "bin/debug"
+            ],
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Foostart\\Filemanager\\FilemanagerServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Foostart\\Filemanager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "foostart",
+                    "email": "foostart.com@gmail.com",
+                    "homepage": "http://www.foostart.com"
+                }
+            ],
+            "description": "A file upload/editor intended for use with Laravel 5 and CKEditor / TinyMCE",
+            "keywords": [
+                "CKEditor",
+                "file",
+                "filemanager",
+                "image",
+                "laravel",
+                "manager",
+                "tinymce",
+                "upload"
+            ],
+            "support": {
+                "issues": "https://github.com/foostart/package-filemanager/issues",
+                "source": "https://github.com/foostart/package-filemanager/tree/8.0.0"
+            },
+            "time": "2020-12-27T03:39:12+00:00"
+        },
+        {
+            "name": "foostart/package-post",
+            "version": "8.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/foostart/package-post.git",
+                "reference": "51849e61c6bee88f1a1a76e7fe8cc5b2a1b88ba5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/foostart/package-post/zipball/51849e61c6bee88f1a1a76e7fe8cc5b2a1b88ba5",
+                "reference": "51849e61c6bee88f1a1a76e7fe8cc5b2a1b88ba5",
+                "shasum": ""
+            },
+            "require": {
+                "foostart/package-filemanager": "*",
+                "foostart/package-slideshow": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Foostart\\Post\\": "/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FooStart",
+                    "email": "foostart.com@gmail.com",
+                    "homepage": "http://foostart.com"
+                }
+            ],
+            "description": "Manage post",
+            "keywords": [
+                "foostart",
+                "laravel 5 package post"
+            ],
+            "support": {
+                "issues": "https://github.com/foostart/package-post/issues",
+                "source": "https://github.com/foostart/package-post/tree/8.0.4"
+            },
+            "time": "2020-12-23T08:05:28+00:00"
+        },
+        {
             "name": "foostart/package-sentry",
             "version": "8.0.1",
             "source": {
@@ -702,6 +823,48 @@
                 "source": "https://github.com/foostart/package-sentry/tree/master"
             },
             "time": "2020-08-24T21:52:29+00:00"
+        },
+        {
+            "name": "foostart/package-slideshow",
+            "version": "8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/foostart/package-slideshow.git",
+                "reference": "3ce80c68394cfd5315e854d761fb98bfe20a40de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/foostart/package-slideshow/zipball/3ce80c68394cfd5315e854d761fb98bfe20a40de",
+                "reference": "3ce80c68394cfd5315e854d761fb98bfe20a40de",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Foostart\\Slideshow\\": "/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FooStart",
+                    "email": "foostart.com@gmail.com",
+                    "homepage": "http://foostart.com"
+                }
+            ],
+            "description": "Create overview slideshow can intergrate other project",
+            "keywords": [
+                "foostart",
+                "laravel 5 package slideshow"
+            ],
+            "support": {
+                "issues": "https://github.com/foostart/package-slideshow/issues",
+                "source": "https://github.com/foostart/package-slideshow/tree/8.0.0"
+            },
+            "time": "2020-12-23T07:39:28+00:00"
         },
         {
             "name": "fruitcake/laravel-cors",
